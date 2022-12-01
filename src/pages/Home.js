@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
-import { PRODUCT_CONTEXT } from "../App";
 import ProductCard from "../components/ProductCard";
+import { useProductContext } from "../context/ProductProvder";
 
 const Home = () => {
-  const {state:{products}} = useContext(PRODUCT_CONTEXT);
+  const {state: {products}} = useProductContext();
 
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl gap-14 mx-auto my-10'>

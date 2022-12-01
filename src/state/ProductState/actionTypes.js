@@ -1,0 +1,5 @@
+export const actionTypes = {
+    FETCHING_SUCCESS:"FETCHING SUCCESS",
+    ADD_TO_CART: "ADD TO CART",
+    ADD_TO_WISHLIST: "ADD TO WISHLIST"
+}
